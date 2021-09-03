@@ -1,0 +1,30 @@
+@charset "utf-8";
+*{
+    margin: 10px 10px 10px 10px;
+    background-color: darkgray;
+}
+
+button{
+    color:rgb(160, 160, 223);
+    background-color: coral;
+    /* border: 1px solid red; */
+}
+h1{
+    color:blue;
+}
+.red{
+    color:red;
+}
+h2{
+    border: 5px solid salmon;
+}
+.you{
+    border: 10px solid salmon;
+    font-size: 100px;
+    width: 80%;
+    height: 500px;
+}
+div{
+    background-color: blueviolet;
+    color:aliceblue;
+}

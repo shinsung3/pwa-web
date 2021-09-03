@@ -1,10 +1,10 @@
 @charset "utf-8";
 
 /* reset */
-* {margin: 0;padding: 0;}
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
-h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
-a {color: inherit; text-decoration: inherit;}
+/* * {margin: 0;padding: 0;} */
+/* html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;} */
+/* h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;} */
+/* a {color: inherit; text-decoration: inherit;} */
 img {vertical-align: middle;}
 a img {border: none;}
 li {list-style: none;}
@@ -12,12 +12,12 @@ address, em, i {font-style: normal;}
 
 /*layout*/
 body {font-family: 'NanumSquare', sans-serif !important; font-size: 14px; color:#4e4e4e; line-height: 1.4;}
-.wrap {width: 100%; min-width: 1100px; overflow: hidden;}
+/* .wrap {width: 100%; min-width: 1100px; overflow: hidden;} */
 
 /*header*/
 header {width: 100%; height: 120px; line-height: 120px; padding: 0 60px; box-sizing: border-box; position: fixed; top:0; z-index: 100; }
 header.on {background: #fff;}
-header .logo {display: block; font-size: 42px; font-weight: 900;letter-spacing: -6px; color: #39312b; float: left;}
+header .logo {display: block; font-size: 42px; font-weight: 900;letter-spacing: -6px; color: #9B1D4F; float: left;}
 header nav {float: right;}
 header nav .gnb li {display: inline-block; margin-left: 60px;}
 header nav .gnb li a {display: block; font-size: 18px; text-transform: uppercase; position: relative;}
@@ -68,7 +68,7 @@ section.visual .slick-active .img .mask.d {animation-name: mask; animation-durat
 section.visual .slick-active .title h2{animation-name:slid-up; animation-duration: 1.5s; }
 section.visual .slick-active .title p {animation-name:slid-up; animation-duration: 2.2s;}
 section.visual .menu {animation-name:slid-up; animation-duration: 2.8s;}
-section.visual .slick-active .imgBox img {transform: scale(1); animation-name: scaleani; animation-duration: 5.2s;}
+/* section.visual .slick-active .imgBox img {transform: scale(1); animation-name: scaleani; animation-duration: 5.2s;} */
 
 @keyframes scaleani {
     0%{transform: scale(1.3);}
@@ -183,7 +183,7 @@ footer .box.motion h2 {color: #fff; font-size: 22px; font-weight: normal; animat
 
 
 /*모바일 네비 추가*/
-header .open {display: none;}
+header .open {display: none; color:#9B1D4F}
 header .close {display: none;}
 
 /*모바일용 줄바꿈*/
@@ -193,7 +193,7 @@ br.mo {display: none;}
 /*테블릿모드 : 1100px이하~ 951px*/
 @media screen and (max-width:1100px){
     .wrap {min-width: 100%;}
-    
+
     /*header*/
     header {height: 60px; line-height: 60px;padding:0 10px;}
     header .open {display: block; float: right;font-size: 32px; height: 60px; padding-top: 5px; box-sizing: border-box;}
@@ -202,20 +202,20 @@ br.mo {display: none;}
     header nav{background: #fff; width: 0; height: 100vh; position: absolute; right: 0; top:0; overflow: hidden; transition: width 0.3s; z-index:300; }
     header nav.on {width: 70%; max-width: 300px; }
     header nav .close {display: block; position: absolute; right: 10px; top:0; font-size: 35px; padding-top: 5px; box-sizing: border-box;}
-    header nav .gnb {margin-top: 100px;}
+    header nav .gnb {margin-top: 30px;}
     header nav .gnb li {display: block; width: 100%; margin:0; line-height: 60px;}
-    header nav .gnb li a {width: 100%; padding-left: 30px; box-sizing: border-box;font-size:20px; }
+    header nav .gnb li a {width: 100%; padding-left: 30px; box-sizing: border-box;font-size:15px; }
     header nav .gnb li a:after {display: none;}
-    
+
     /*visual*/
     section.visual {margin-top: 60px;}
-    section.visual .img img {height: 100%; width: auto;}
+    section.visual .img img {height: 100%; width: 100%;}
     section.visual .title {left: 5%;}
     section.visual .menu {width: 100%; left: 5%;}
     section.visual .menu li {margin-right: 30px;}
     section.visual .menu li a p {font-size: 17px;}
     .slick-dots {right: 2.5%;}
-    
+
     /*about*/
     section.about {width: 100%; height: 600px;}
     section.about img{height: 100%; width: auto;}
@@ -266,36 +266,36 @@ br.mo {display: none;}
     section.global.motion ul li {width: 50%; margin-bottom: 20px;}
     section.global ul li a h3 {font-size: 16px; margin: 20px 0 10px;}
     section.global ul li a h3 span {font-size: 12px;}
-    section.global ul li a p{font-size: 10px;}  
+    section.global ul li a p{font-size: 10px;}
     section.global:before {height: 48%;}
-    
+
     /*footer*/
     footer {padding-top: 50px;}
     footer .sns li:last-child {margin-right: 0;}
     footer .footerLogo {font-size: 28px; letter-spacing: -4px;}
     footer ul li {font-size:13px; }
-    footer ul li .copyright {font-size: 13px; margin-top: 10px;} 
+    footer ul li .copyright {font-size: 13px; margin-top: 10px;}
     footer .box {padding: 80px 0;}
-    footer .box.motion h2{font-size: 17px;}  
+    footer .box.motion h2{font-size: 17px;}
 }
-/* 750px 이하 - 모바일 디바이스 체크 */  
+/* 750px 이하 - 모바일 디바이스 체크 */
 @media screen and (max-width:750px){
     /*visual*/
-    section.visual {height: 80vh; overflow: hidden;}
-    section.visual .img {width: 87%;}
-    section.visual .img img {height: 80vh; width:auto;}
+    section.visual {height: 40vh; overflow: hidden;}
+    section.visual .img {width: auto;}
+    section.visual .img img {height: 40vh; width:100%;}
     section.visual .img .page img {width: 75%; height: auto;margin-left: 8%;}
     br.mo {display: block;}
     section.visual .title h2{font-size: 29px;}
     section.visual .title p{font-size: 14px;}
     .slick-dots{right: 20px;}
-    
+
     /*about*/
     section.about .inner.motion h2 {font-size: 20px; margin-bottom: 10px;}
     section.about .inner .line {display: none;}
     section.about .inner ul li {width: 100%;margin: 20px 0 0;font-size: 13px;}
     section.about .inner ul li h3 {font-size: 16px; margin-bottom: 8px;}
-    
+
     /*premium*/
     section.premium {height: 685px;}
     section.premium .title h2{font-size: 20px;}
